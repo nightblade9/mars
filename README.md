@@ -1,4 +1,7 @@
 # Mars
+
+[![Build Status](https://travis-ci.org/nightblade9/mars.svg?branch=master)](https://travis-ci.org/nightblade9/mars)
+
 Mars is a command-line tools for generating and running HaxeFlixel games in Python, via Dragon.
 
 # Sample Usage
