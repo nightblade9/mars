@@ -4,4 +4,4 @@ Mars is a command-line tools for generating and running HaxeFlixel games in Pyth
 # Sample Usage
 
 - `mars template`: creates a new HaxeFlixel starter project, in Python
-- `mars run <platform>`: transpiles the Python code to HaxeFlixel and runs it on the target platform (wraps calls to `lime test <platform>`).
+- `mars build <platform>`: transpiles the Python code to HaxeFlixel and builds it against the specified Haxe target platform (wraps calls to `lime build <platform>`).
