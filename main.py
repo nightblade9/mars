@@ -3,8 +3,13 @@ import glob
 import os
 import sys
 
+### Replace this with the relative or absolute location of your "dragon" repository
+# TODO: figure out how to bundle this into a runnable command
+DRAGON_PATH = os.path.join("..", "dragon")
+sys.path.append(DRAGON_PATH)
+
 from dragon.transpiler.python_to_haxe_transpiler import PythonToHaxeTranspiler
-from dragon.template_creator import TemplateCreator
+from mars.template_creator import TemplateCreator
 
 TEMPLATE_COMMAND = "template"
 BUILD_COMMAND = "build"
@@ -23,7 +28,7 @@ def mars(args):
         elif command == BUILD_COMMAND:
             if len(args) >= 2:
                 source_path = args[1]
-                files_path = os.path.join(os.getcwd(), source_path, "**/*.py")
+                files_path = os.path.join(source_path, "**/*.py")
                 files = glob.glob(files_path, recursive=True)
                 print("Transpiling {} files...".format(len(files)))
                 PythonToHaxeTranspiler(source_path, files).transpile()
