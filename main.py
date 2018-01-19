@@ -6,7 +6,7 @@ import sys
 ### Replace this with the relative or absolute location of your "dragon" repository
 # TODO: figure out how to bundle this into a runnable command
 DRAGON_PATH = os.path.join("..", "dragon")
-sys.path.append(DRAGON_PATH)
+sys.path.extend(DRAGON_PATH)
 
 from dragon.transpiler.python_to_haxe_transpiler import PythonToHaxeTranspiler
 from mars.template_creator import TemplateCreator
