@@ -2,10 +2,10 @@ from flixel import FlxState
 
 class PlayState(FlxState):
 
-    """#override"""
+    @haxe: override
     def create(self):
         super.create()
 
-    """#override"""
+    @haxe: override
     def update(self, elapsed):
         super.update(elapsed)
