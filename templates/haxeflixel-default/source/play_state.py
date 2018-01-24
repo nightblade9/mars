@@ -4,8 +4,8 @@ class PlayState(FlxState):
 
     @haxe: override
     def create(self):
-        super.create()
+        super(PlayState, self).create()
 
     @haxe: override
     def update(self, elapsed):
-        super.update(elapsed)
+        super(PlayState, self).update(elapsed)
